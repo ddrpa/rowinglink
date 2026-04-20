@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "cc.ddrpa.minecraft.rowinglink.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AbstractBoatMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
