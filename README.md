@@ -4,6 +4,12 @@
 
 各位，瞧好了。RowingLink 是一个 Fabric 小模组。它的原理其实很简单：通过 UDP 协议接收你划船机的数据，然后把你的功率和桨频转化成游戏里小船的推进力。我还加了个自动转向功能，默认是开着的，这样你就不用担心撞到岸上，只要埋头划桨就行了。当然，如果你觉得方向不对，随时可以手动拨回来。
 
+## 视频演示
+
+![video-preview.png](video-preview.png)
+
+[Bilibili 源](https://www.bilibili.com/video/BV1zhdQBEE4o)
+
 ## 软硬件要求
 
 首先，你得有一台划船机，而且你得有办法把它的运动数据弄出来。如果你的机器支持 FTMS 协议，那事情就简单多了。我用的是 Mok Fitness K10，所以我写了个解析逻辑（就在 `rowinglink-bridge/adapters/mok_k10.py` 里），这是我对着它的蓝牙数据包逆向分析出来的。如果你用的是别的牌子，可能得自己动手写个适配器。
